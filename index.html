@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Shoes Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us in our comfortable shoe research</p>
+        <form action="" id="survey-form">
+            <div class="wrap-input-item">
+                <label for="name" id="name-label">
+                    Name
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </label>
+            </div>
+            <div class="wrap-input-item">
+                <label for="email" id="email-label">
+                    Email
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </label>
+            </div>
+            <div class="wrap-input-item">
+                <label for="number" id="number-label">
+                    Age
+                    <input type="number" id="number" min="15" max="40" placeholder="Age" required>
+                </label>
+            </div>
+            <div class="wrap-input-item">
+                <label for="dropdown" id="dropdown-label">
+                    What is your favorite shoe ?
+                    <select id="dropdown">
+                        <option value="sneakers">Sneakers</option>
+                        <option value="wedges">Wedges</option>
+                        <option value="peep toe heels">Peep Toe Heels</option>
+                        <option value="flat shoes">Flat Shoes</option>
+                    </select>
+                </label>
+            </div>
+            <div class="wrap-input-item">
+                <label for="comfort-shoes" id="radio-label">
+                    What do you think about soft shoes?
+                    <label for="very-comfort">
+                        <input type="radio" name="shoe-comfort" checked id="very-comfort" value="very comfortable"> Very
+                        Comfortable
+                    </label>
+                    <label for="comfort">
+                        <input type="radio" name="shoe-comfort" id="comfort" value="comfortable">
+                        Comfortable
+                    </label>
+                    <label for="unconfort">
+                        <input type="radio" name="shoe-comfort" id="uncomfort" value="uncomfortable"> uncomfortable
+                    </label>
+                </label>
+            </div>
+            <div class="wrap-input-item">
+                <label for="shoes-worn">
+                    What type of shoes do you use?
+                    <label for="sneakers">
+                        <input type="checkbox" name="sneakers" value="sneakers" id="sneakers"> Sneakers
+                    </label>
+                    <label for="heels">
+                        <input type="checkbox" name="heels" value="heels" id="heels"> Heels
+                    </label>
+                    <label for="flat-shoes">
+                        <input type="checkbox" name="flat shoes" value="flat shoes" id="flat-shoes"> Flat shoes
+                    </label>
+                    <label for="oxfords">
+                        <input type="checkbox" name="oxfords" value="oxfords" id="oxfords"> Oxfords
+                    </label>
+                    <label for="loafers">
+                        <input type="checkbox" name="loafers" value="loafers" id="loafers"> Loafers
+                    </label>
+                    <label for="clasic-canvas-low">
+                        <input type="checkbox" name="clasic-canvas low" value="clasic canvas low"
+                            id="clasic-canvas-low">
+                        Clasic canvas low
+                    </label>
+                </label>
+            </div>
+            <div class="wrap-input-item">
+                Any comments or suggestions?
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
